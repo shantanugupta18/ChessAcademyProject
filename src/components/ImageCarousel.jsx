@@ -1,12 +1,17 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../styles/ImageCarousel.css";
+import gallery_one from "../assets/gallery_one.jpeg";
+import gallery_two from "../assets/gallery_two.jpeg";
+import gallery_three from "../assets/gallery_three.jpeg";
+import gallery_four from "../assets/gallery_four.jpeg";
+import gallery_five from "../assets/gallery_five.jpeg";
 
 const images = [
-    "/src/assets/gallery_one.jpeg",
-    "/src/assets/gallery_two.jpeg",
-    "/src/assets/gallery_three.jpeg",
-    "/src/assets/gallery_four.jpeg",
-    "/src/assets/gallery_five.jpeg",
+    gallery_one,
+    gallery_two,
+    gallery_three,
+    gallery_four,
+    gallery_five,
 ];
 
 const ImageCarousel = () => {
