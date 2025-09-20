@@ -1,0 +1,157 @@
+.achievements-section {
+  background: #f7f3f0;
+  padding: 1rem 0 5rem 0;
+  color: #2d2323;
+}
+
+.achievements-description {
+  text-align: center;
+  max-width: 80vw;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.achievements-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.achievement-text {
+  flex: 2;
+}
+
+.achievement-image img {
+  max-width: 220px;
+  border-radius: 10px;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.achievement-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  min-height: 340px;
+  position: relative;
+}
+
+.row-normal {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.achievement-img-wrapper {
+  flex: 1.2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.achievement-img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+}
+
+.achievement-info {
+  flex: 2;
+  background: #fff;
+  border-radius: 0 0 0 32px;
+  padding: 2.5rem 2rem 2.5rem 3rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.row-reverse .achievement-info {
+  border-radius: 0 32px 0 0;
+  padding: 2.5rem 3rem 2.5rem 2rem;
+}
+
+.achievement-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2d2323;
+}
+
+.achievement-info p {
+  font-size: 1.15rem;
+  color: #5a4a42;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .achievements-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .achievement-row,
+  .row-normal,
+  .row-reverse {
+    flex-direction: column !important;
+    min-height: unset;
+  }
+
+  .achievement-img-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .achievement-info,
+  .row-reverse .achievement-info {
+    border-radius: 0 0 32px 32px;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .achievement-img {
+    max-width: 80%;
+  }
+
+  .achievement-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .achievement-info p {
+    font-size: 1rem;
+  }
+
+  .achievement-row,
+  .row-normal,
+  .row-reverse {
+    flex-direction: column !important;
+    min-height: unset;
+  }
+
+  .achievement-img-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .achievement-info,
+  .row-reverse .achievement-info {
+    border-radius: 0 0 32px 32px;
+    padding: 1.5rem;
+  }
+}

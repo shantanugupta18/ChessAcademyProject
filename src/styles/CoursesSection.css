@@ -1,0 +1,190 @@
+.courses-section {
+    background: #fff;
+    padding: 2rem 1.2rem; /* Increase side padding for all screens */
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.courses-main-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.03em;
+}
+
+.course-description {
+    font-size: 1.1rem;
+    max-width: 80vw;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+    color: #444;
+    line-height: 1.6;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: stretch;
+    width: 100%;
+    max-width: 850px;     /* Limit maximum width */
+    margin: 0 auto;       /* Center horizontally */
+    padding: 0 0.6rem;    /* Add a bit more inner side padding */
+}
+
+@media (min-width: 600px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;     /* Tweak as needed for compact feel */
+        padding: 0 1.8rem;
+    }
+}
+
+.course-card {
+    background: radial-gradient(circle at 20% 20%, #f6fbff 60%, #e3eeff 100%);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(27, 85, 255, 0.11);
+    padding: 2rem 1.5rem 2.5rem 1.5rem;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.32s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.22s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s;
+    will-change: transform, box-shadow;
+}
+.course-card:hover, .course-card:focus {
+    transform: translateY(-10px) scale(1.021);
+    box-shadow: 0 8px 30px #0077ff22;
+    background: radial-gradient(circle at 50% 60%, #eaf6ff 82%, #cbe0ff 100%);
+    border: 2px solid #0077ff33;
+    z-index: 2;
+}
+
+.course-card.animated {
+    animation: fadeInUp 0.4s cubic-bezier(0.39, 0.58, 0.57, 1) backwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2em;
+    gap: 1em;
+}
+
+.course-title {
+    font-size: 1.38rem;
+    font-weight: 700;
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.course-price {
+    font-weight: bold;
+    color: #0077ff;
+    font-size: 1.12em;
+    margin: 0 0 0 1em;
+    white-space: nowrap;
+}
+
+.course-features {
+    list-style: disc outside;
+    margin-left: 1.2em;
+    font-size: 1.07em;
+    color: #333;
+    margin-bottom: 1.7em;
+    min-height: 68px;
+}
+
+.course-enroll-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #0077ff 30%, #00cfff 90%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 0.85em 0;
+    font-size: 1.08em;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(27, 85, 255, 0.10);
+    transition: background 0.18s, box-shadow 0.18s, transform 0.2s;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+    outline: none;
+}
+
+.course-enroll-btn:hover,
+.course-enroll-btn:focus {
+    background: linear-gradient(90deg, #0057b8 30%, #21e6ff 90%);
+    box-shadow: 0 3px 17px rgba(0, 119, 255, 0.16);
+    transform: scale(1.04);
+}
+
+@media (max-width: 450px) {
+    .courses-main-heading {
+        font-size: 1.65rem;
+    }
+    .course-card {
+        padding: 1.2rem 0.7rem 2.2rem 0.7rem;
+    }
+    .course-title {
+        font-size: 1.12rem;
+    }
+    .course-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4em;
+    }
+    .course-price {
+        font-size: 1em;
+        margin-left: 0;
+        margin-top: 0.15em;
+    }
+    .course-features {
+        font-size: 0.97em;
+        min-height: 46px;
+    }
+    .course-enroll-btn {
+        padding: 0.8em 0;
+        font-size: 0.9em;
+        margin-top: 1.3em;
+    }
+    .course-description {
+    font-size: 0.9rem;
+    max-width: 80vw;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+    color: #444;
+    line-height: 1.6;
+}
+}
+
+@media (min-width: 1024px) {
+    .courses-grid {
+        max-width: 980px;     /* Slightly increase for desktop, still compact */
+        padding: 0 2.5rem;
+    }
+}
+
+/* Optionally, make cards less wide on very large screens */
+@media (min-width: 1400px) {
+    .courses-grid {
+        max-width: 950px;
+        padding: 0 3.5rem;
+    }
+}

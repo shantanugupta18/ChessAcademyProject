@@ -1,0 +1,45 @@
+.notice-board {
+    display: flex;
+    align-items: center;
+    background: #ffe600;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.fixed-text {
+    color: red;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+    position: relative;
+}
+
+.scroll-text {
+    display: inline-block;
+    color: #0077ff;
+    animation: scrollText 20s linear infinite;
+    will-change: transform;
+    visibility: visible;
+    font-weight: bolder;
+}
+
+@keyframes scrollText {
+    0%   { transform: translateX(100vw); }
+    100% { transform: translateX(-100vw); }
+}
+
+@media (max-width: 768px) {
+    .notice-board {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .scroll-text {
+        animation: scrollText 10s linear infinite;
+    }
+}

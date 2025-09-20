@@ -1,0 +1,158 @@
+.header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 0;
+    height: 64px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.4s, box-shadow 0.4s;
+    box-shadow: none;
+    padding: 0;
+    /* Remove horizontal padding from nav */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav.scrolled {
+    background: linear-gradient(90deg, #f7b733 0%, #fc4a1a 100%);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.header-content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.75rem;
+}
+
+.header-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.header-logo span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.header-logo.top img.logo-top {
+    filter: brightness(0) invert(1);
+}
+
+.header-logo.top .logo-text-top {
+    color: #fff;
+}
+
+.header-logo.scrolled img.logo-scrolled {
+    filter: none;
+}
+
+.header-logo.scrolled .logo-text-scrolled {
+    color: #222;
+}
+
+.header-links {
+    display: flex;
+    gap: 2rem;
+    color: aliceblue;
+}
+
+.header-links button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header-links button:hover {
+    background: #fff3;
+    color: #fc4a1a;
+}
+
+.header-links.top button.header-link-top {
+    color: #fff;
+}
+
+.header-links.scrolled button.header-link-scrolled {
+    color: #222;
+}
+
+@media (max-width: 900px) {
+    .header-nav {
+        padding: 0 1rem;
+        height: 56px;
+    }
+
+    .header-logo img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .header-logo span {
+        font-size: 1.05rem;
+    }
+
+    .header-links {
+        gap: 1rem;
+    }
+
+    .header-links button {
+        font-size: 0.95rem;
+        padding: 0.4em 0.7em;
+    }
+
+    .header-content {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-nav {
+        flex-direction: row;
+        height: auto;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .header-logo {
+        margin-bottom: 0.5rem;
+    }
+
+    .header-links {
+        gap: 0.5rem;
+        justify-content: flex-end;
+    }
+
+    .header-links button {
+        font-size: 0.9rem;
+        padding: 0.3em 1.2em;
+    }
+
+    .header-logo span.logo-text-top,
+    .header-logo span.logo-text-scrolled {
+        display: none;
+    }
+
+    .header-content {
+        padding: 0 0.5rem;
+    }
+}

@@ -1,0 +1,91 @@
+.carousel-container {
+  width: 100%;
+  margin: 2rem auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 200%; /* Twice width for duplicated images */
+  animation: scrollLeft 30s linear infinite;
+  /* Remove transition */
+}
+
+.carousel-image {
+  width: 20%; /* 5 images original, doubled = 10 images */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  padding: 0.5em;
+  margin: auto 1em;
+  /* Remove transform scale animation */
+}
+
+.carousel-image:hover {
+  transform: scale(1.03);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Preview overlay and responsiveness remain unchanged */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.carousel-preview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.carousel-preview-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-image {
+    height: 200px;
+    margin: auto 0.5em;
+  }
+}
+
+

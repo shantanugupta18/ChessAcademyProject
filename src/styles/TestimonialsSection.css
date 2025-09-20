@@ -1,0 +1,38 @@
+.testimonials-section {
+    background: #eaf4ff;
+    padding: 2rem 0;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 1.5rem;
+    min-width: 220px;
+    text-align: center;
+}
+
+.testimonial-rating {
+    color: #ffc107;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.google-reviews {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.google-review-placeholder {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #000000;
+}
