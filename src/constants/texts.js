@@ -4,6 +4,12 @@ export const HERO = {
   subtitle: "Join our academy to develop strategic thinking, analytical skills, and a love for chess. Book your free demo class today!"
 };
 
+export const ABOUT = {
+  title: "About Us",
+  text: `Viansh Chess Academy (VCA) is dedicated to nurturing chess talent and fostering a love for the game. Our students have consistently excelled in tournaments and developed strategic thinking, discipline, and sportsmanship. One of our proudest achievements is Nitesh Yadav, who achieved a FIDE rating in just six months and is currently ranked among the top young players in India.`,
+  CTA_Button_Label: "View Nishant\'s FIDE Rating Chart"
+};
+
 export const NOTICE_BOARD = {
   notice: "Notice Board",
   results: "Student Registration Open for the new batch starting from 9th Oct 2025. Enroll now!"
@@ -72,25 +78,22 @@ export const ACHIEVEMENTS = [
     description: "In 2024, Aim Chess Academy students won several inter-academy tournaments and received recognition for their outstanding performance. Our students consistently excel in competitions, demonstrating strategic thinking and rapid skill development."
   },
 	{
-		img: "/src/assets/achivement.jpg",
-		title: "Inter-Academy Tournament Winner",
-		desc: "Our student won the 2024 Inter-Academy Chess Tournament, showcasing strategic mastery and dedication.",
-	},
-	{
-		img: "/src/assets/achivement.jpg",
+		img: "src/assets/youngest-champ.jpg",
 		title: "Best Young Player Award",
-		desc: "Recognized for outstanding performance and rapid skill development in national competitions.",
+		desc: "Our academy student, Ishank Singh Yadav, holds the distinction of being the youngest FIDE rapid-rated player from Uttar Pradesh and the second youngest in India. He began playing chess at the age of 3 and achieved his FIDE rating by just 4 years old.",
 	},
 	{
-		img: "/src/assets/achivement.jpg",
-		title: "Certificate of Excellence",
-		desc: "Awarded for consistent participation and top results in monthly practice tournaments.",
+		img: "src/assets/second-youngest.jpg",
+		title: "Little Master on the Rise",
+		desc: "Already a a double state champ in Uttar Pradesh—he topped both the Under-7 and Under-9 categories! He\’s making waves at the national level, too, finishing solidly in the top 20 for both groups. Big dreams and bigger moves coming up for this bright chess enthusiast",
 	},
-	{
-		img: "/src/assets/achivement.jpg",
-		title: "Team Spirit Award",
-		desc: "Celebrated for teamwork and sportsmanship during group events and team matches.",
-	},
+  {
+    img: "src/assets/fide-rating-champ.jpg",
+    title: "Achieving a FIDE Rating in Just Six Months",
+    desc: "Nitesh Yadav achieved his FIDE rating in an impressive six months after joining our academy, showcasing his rapid progress and dedication to the game.",
+    width: "480px",
+    height: "360px"
+  }
 ];
 
 export const FAQS = [

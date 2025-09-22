@@ -9,23 +9,27 @@ const achievementsWithImg = ACHIEVEMENTS.map((item, idx) =>
 
 const AchievementsSection = () => (
 	<section className="achievements-section">
-		<h2>{achievementsWithImg[0].heading}</h2>
-    <p className="achievements-description">{achievementsWithImg[0].description}</p>
+		<h2>{ACHIEVEMENTS[0].heading}</h2>
+    <p className="achievements-description">{ACHIEVEMENTS[0].description}</p>
 		<div className="achievements-list">
-			{achievementsWithImg.slice(1).map((item, idx) => (
+			{ACHIEVEMENTS.slice(1).map((item, idx) => (
 				<div
 					className={`achievement-row ${
 						idx % 2 === 0 ? "row-normal" : "row-reverse"
 					}`}
 					key={idx}
 				>
-					<div className="achievement-img-wrapper">
-						<img
-							src={item.img}
-							alt={item.title}
-							className="achievement-img"
-						/>
-					</div>
+								<div className="achievement-img-wrapper">
+									<img
+										src={item.img}
+										alt={item.title}
+										className="achievement-img"
+										style={{
+											width: item.width || "340px",
+											height: item.height || "380px"
+										}}
+									/>
+								</div>
 					<div className="achievement-info">
 						<h3>{item.title}</h3>
 						<p>{item.desc}</p>
