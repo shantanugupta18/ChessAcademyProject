@@ -33,5 +33,3 @@ This project is a modern, responsive Chess Academy website built with React and 
 - Update content in components and pages as needed.
 
 ---
-
-For more details, see `.github/copilot-instructions.md`.
