@@ -11,14 +11,15 @@
 }
 
 .about-section p {
-    max-width: 700px;
+    max-width: 80vw;
     margin: 0 auto 2rem auto;
     font-size: 1.2rem;
     color: #5a4a42;
 }
 
 .about-section div {
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
+    max-width: 80vw;
 }
 
 .div {
@@ -27,7 +28,7 @@
 }
 
 .view-fide-chart-button {
-    background: #2d2323;
+    background: linear-gradient(90deg, #5a4a42 0%, #2d2323 100%);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -35,10 +36,11 @@
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 1.5rem;
+    transition: background 1s;
 }
 
 .view-fide-chart-button:hover {
-    background: #5a4a42;
+    background: linear-gradient(90deg, #2d2323 0%, #5a4a42 100%);
 }
 
 .iframe-loader {
@@ -60,5 +62,28 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    animation: spin 1s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.about-chessboard-gif {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .about-chessboard-gif {
+    bottom: 56px;
+    width: 80px;
+    height: 80px;
+    }
 }

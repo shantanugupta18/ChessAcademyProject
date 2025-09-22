@@ -39,17 +39,33 @@ export const COURSES = [
     title: "Available Classes",
     description_parta: "Chess classes are offered in both",
     description_bold: "Offline and Online",
-    description_partb: "formats, ensuring students can learn wherever they feel most comfortable. Offline coaching provides interactive, face-to-face learning and real-time feedback, while online classes offer flexible scheduling and the convenience of remote participation. Choose the approach that best fits your lifestyle and experience the same high-quality training and guidance in both classroom settings."
+    description_partb: "formats, ensuring students can learn wherever they feel most comfortable. Offline coaching provides interactive, face-to-face learning and real-time feedback, while online classes offer flexible scheduling and the convenience of remote participation. Choose the approach that best fits your lifestyle and experience the same high-quality training and guidance in both classroom settings.",
+    highlight_text: "Hurry! Limited seats available. In every course only 5 students can join."
   },
   {
-    title: "Individual Classes",
+    title: "Beginner Classes",
     price: "₹2500 per month",
-    features: ["Basics of chess", "Both Offline and Online", "Age group: 3 - 15 years"]
+    features: ["Openings & strategies", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
+  },
+  {
+    title: "Intermediate Classes",
+    price: "₹3999 per month",
+    features: ["Tactics & endgames", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
+  },
+  {
+    title: "Advanced Classes",
+    price: "₹4999 per month",
+    features: ["Tactics & endgames", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
   },
   {
     title: "Expert Classes",
-    price: "₹3000 per month",
-    features: ["Openings & strategies", "Both Offline and Online", "Age group: 3 - 15 years"]
+    price: "₹5999 per month",
+    features: ["Tactics & endgames", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
+  },
+  {
+    title: "Individual Classes",
+    price: "₹499 per class",
+    features: ["Optional Class", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "Flexible scheduling"]
   },
 ];
 

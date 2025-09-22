@@ -2,30 +2,37 @@ import React from "react";
 import { useState } from "react";
 import "../styles/AboutSection.css";
 import { ABOUT } from "../constants/texts";
-
-
+// import chessboardLoadingGif from "../assets/chessboard-loading.gif";
+import chessboardLoadingGif from "../assets/chess-animation.gif";
 
 const AboutSection = () => {
   const [showFideChart, setShowFideChart] = useState(false);
   const aboutText = ABOUT.text;
+  const ctaLabel = showFideChart ? "Close" : ABOUT.CTA_Button_Label;
+  const handleCtaClick = () => setShowFideChart((prev) => !prev);
   return (
-    <section className="about-section">
+    <section className="about-section" style={{ position: "relative" }}>
       <h2>About VCA</h2>
       <p>{aboutText}</p>
       <div>
         <strong>Nitesh Yadav</strong> achieved a FIDE rating in just six months and is currently ranked among the top young players in India.
       </div>
-      <button className="view-fide-chart-button" onClick={() => setShowFideChart(true)}>
-        {ABOUT.CTA_Button_Label}
+      <button className="view-fide-chart-button" onClick={handleCtaClick}>
+        {ctaLabel}
       </button>
       {showFideChart && (
-        <IframeWithLoader />
+        <IframeWithLoader onClose={handleCtaClick} />
       )}
+      <img
+        src={chessboardLoadingGif}
+        alt="Chessboard loading animation"
+        className="about-chessboard-gif"
+      />
     </section>
   );
 };
 
-const IframeWithLoader = () => {
+const IframeWithLoader = ({ onClose }) => {
   const [loading, setLoading] = useState(true);
   return (
     <div style={{ margin: "2rem auto", maxWidth: "900px", position: "relative" }}>
@@ -44,7 +51,6 @@ const IframeWithLoader = () => {
         loading="lazy"
         onLoad={() => setLoading(false)}
       ></iframe>
-      {/* Loader animation keyframes */}
       <style>{`
         @keyframes spin {
           0% { transform: rotate(0deg); }
@@ -54,4 +60,5 @@ const IframeWithLoader = () => {
     </div>
   );
 };
+
 export default AboutSection;
