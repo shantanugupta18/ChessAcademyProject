@@ -5,6 +5,10 @@ import gallery_two from "../assets/gallery_two.jpeg";
 import gallery_three from "../assets/gallery_three.jpeg";
 import gallery_four from "../assets/gallery_four.jpeg";
 import gallery_five from "../assets/gallery_five.jpeg";
+import gallery_six from "../assets/gallery_six.jpg";
+import gallery_seven from "../assets/gallery_seven.jpg";
+import gallery_eight from "../assets/gallery_eight.jpg";
+import gallery_nine from "../assets/gallery_nine.jpg";
 
 const images = [
     gallery_one,
@@ -12,6 +16,10 @@ const images = [
     gallery_three,
     gallery_four,
     gallery_five,
+    gallery_six,
+    gallery_seven,
+    gallery_eight,
+    gallery_nine
 ];
 
 const ImageCarousel = () => {

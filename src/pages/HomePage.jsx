@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import NoticeBoard from "../components/NoticeBoard";
 import FeaturesSection from "../components/FeaturesSection";
@@ -10,6 +10,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import ContactSection from "../components/ContactSection";
 import ImageCarousel from "../components/ImageCarousel";
 import Header from "../components/Header";
+import AboutSection from "../components/About";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
         <div style={{ width: '100%', margin: 0, padding: 0 }}>
           <HeroSection />
           <NoticeBoard />
+          <AboutSection />
           <FeaturesSection />
           <AchievementsSection />
           <ImageCarousel />
