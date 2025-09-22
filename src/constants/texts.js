@@ -1,5 +1,6 @@
 export const HERO = {
-  title: "Where Champions Are Made — Viansh Chess Academy",
+  titleOne: "Where Champions Are Made —",
+  titleTwo: "Viansh Chess Academy!",
   subtitle: "Join our academy to develop strategic thinking, analytical skills, and a love for chess. Book your free demo class today!"
 };
 

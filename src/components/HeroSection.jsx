@@ -10,6 +10,7 @@ const HeroSection = () => {
     email: "",
     phone: "",
     city: "",
+    datetimestamp: ""
   });
 
   useEffect(() => {
@@ -29,11 +30,25 @@ const HeroSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Format datetimestamp to 'DD MMM YYYY h:mm A' (e.g., 14 Sep 2025 5:29 PM)
+    let formattedDate = "";
+    if (form.datetimestamp) {
+      const dt = new Date(form.datetimestamp);
+      const pad = (n) => n.toString().padStart(2, "0");
+      const day = pad(dt.getDate());
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      const month = monthNames[dt.getMonth()];
+      const year = dt.getFullYear();
+      let hours = dt.getHours();
+      const minutes = pad(dt.getMinutes());
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // 0 should be 12
+      formattedDate = `${day} ${month} ${year} ${hours}:${minutes} ${ampm}`;
+    }
     const courseText = type === "COURSE" ? `interested in the course: ${selectedCourse}` : `have a query: ${form.query}`;
-    const message = `Hi, I am ${form.name} and ${courseText}.\n\nMy contacts and details are:\n• Email: ${form.email}\n• Phone: ${form.phone}\n• City: ${form.city}`;
-    const url = `https://wa.me/919956720520?text=${encodeURIComponent(
-      message
-    )}`;
+    const message = `Hi, I am ${form.name} and ${courseText}.\n\nMy contacts and details are:\n• Email: ${form.email}\n• Phone: ${form.phone}\n• City: ${form.city}\n• Preferred Date & Time for Demo: ${formattedDate}`;
+    const url = `https://wa.me/919956720520?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
@@ -41,7 +56,8 @@ const HeroSection = () => {
     <section id="hero-form" className="hero-section hero-bg">
       <div className="hero-overlay">
         <div className="hero-content">
-          <h1>{HERO.title}</h1>
+          <h1>{HERO.titleOne}</h1>
+          <h1 className="highlighted-text">{HERO.titleTwo}</h1>
           <p>{HERO.subtitle}</p>
         </div>
         <div className="hero-form-wrapper" id="hero-form">
@@ -75,6 +91,14 @@ const HeroSection = () => {
               type="text"
               placeholder="City"
               value={form.city}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="datetimestamp"
+              type="datetime-local"
+              placeholder="Schedule Date & Time"
+              value={form.datetimestamp}
               onChange={handleChange}
               required
             />

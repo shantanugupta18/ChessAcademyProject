@@ -13,9 +13,18 @@
     min-height: 580px;
     background: url('/src/assets/chess-hero-placeholder.jpg') center/cover no-repeat;
     position: relative;
-    display:flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.highlighted-text {
+    background: linear-gradient(90deg, #ffea00 0%, #00eaff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
 }
 
 .hero-overlay {
@@ -44,7 +53,7 @@
 
 .hero-content p {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .hero-form-wrapper {
@@ -54,6 +63,7 @@
     padding: 2rem 1.5rem;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
     max-width: 400px;
+    margin-top: 3.5rem;
 }
 
 .demo-form {
@@ -64,7 +74,7 @@
 
 .demo-form input,
 .demo-form select,
-.demo-form textarea, 
+.demo-form textarea,
 .demo-form button {
     padding: 0.9rem;
     border-radius: 6px;
@@ -105,37 +115,48 @@
         width: 80%;
     }
 }
-@media(max-width:768px){
-    .hero-overlay{
-        padding:2rem 4vw;
+
+@media(max-width:768px) {
+    .hero-overlay {
+        padding: 2rem 4vw;
         background-color: transparent;
     }
-    .hero-content h1{
-        font-size:2.2rem;
+
+    .hero-content h1 {
+        font-size: 2.2rem;
     }
-    .hero-content p{
-        font-size:1.1rem;
+
+    .hero-content p {
+        font-size: 1.1rem;
     }
-    .hero-form-wrapper{
-        width:90%;
-        max-width:none;
+
+    .hero-form-wrapper {
+        width: 90%;
+        max-width: none;
     }
 }
-@media(max-width:450px){
-    .hero-overlay{
-        padding:4rem 3vw;
+
+@media(max-width:450px) {
+    .hero-overlay {
+        padding: 4rem 3vw;
     }
-    .hero-content h1{
-        font-size:1.8rem;
+
+    .hero-content h1 {
+        font-size: 1.7rem;
     }
-    .hero-content p{
-        font-size:1rem;
+
+    .hero-content p {
+        font-size: 1rem;
     }
-    .hero-form-wrapper{
-        padding:1.5rem 1rem;
+
+    .hero-form-wrapper {
+        padding: 1.5rem 1rem;
+        margin-top: none !important;
     }
-    .demo-form input,.demo-form button{
-        font-size:0.9rem;
-        padding:0.75rem;
+
+    .demo-form input,
+    .demo-form button {
+        font-size: 0.9rem;
+        padding: 0.75rem;
     }
 }
