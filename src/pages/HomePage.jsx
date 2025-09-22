@@ -29,6 +29,9 @@ const HomePage = () => {
           <FAQSection />
           {/* <TestimonialsSection /> */}
           <ContactSection />
+          <footer style={{ width: '100%', textAlign: 'center', padding: '1.2rem 0', background: '#222', color: '#fff', fontSize: '1rem', letterSpacing: '0.02em' }}>
+            © 2025 Viansh Chess Academy. All rights reserved.
+          </footer>
         </div>
       </main>
     </>
