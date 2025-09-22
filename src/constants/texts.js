@@ -78,17 +78,17 @@ export const ACHIEVEMENTS = [
     description: "In 2024, Aim Chess Academy students won several inter-academy tournaments and received recognition for their outstanding performance. Our students consistently excel in competitions, demonstrating strategic thinking and rapid skill development."
   },
 	{
-		img: "src/assets/youngest-champ.jpg",
+		img: "../src/assets/youngest-champ.jpg",
 		title: "Best Young Player Award",
 		desc: "Our academy student, Ishank Singh Yadav, holds the distinction of being the youngest FIDE rapid-rated player from Uttar Pradesh and the second youngest in India. He began playing chess at the age of 3 and achieved his FIDE rating by just 4 years old.",
 	},
 	{
-		img: "src/assets/second-youngest.jpg",
+		img: "../src/assets/second-youngest.jpg",
 		title: "Little Master on the Rise",
 		desc: "Already a a double state champ in Uttar Pradesh—he topped both the Under-7 and Under-9 categories! He\’s making waves at the national level, too, finishing solidly in the top 20 for both groups. Big dreams and bigger moves coming up for this bright chess enthusiast",
 	},
   {
-    img: "src/assets/fide-rating-champ.jpg",
+    img: "../src/assets/fide-rating-champ.jpg",
     title: "Achieving a FIDE Rating in Just Six Months",
     desc: "Nitesh Yadav achieved his FIDE rating in an impressive six months after joining our academy, showcasing his rapid progress and dedication to the game.",
     width: "480px",
