@@ -1,3 +1,12 @@
+export const STAR_PERFORMER = {
+  title: "Star Performer & Youngest FIDE Rated Player",
+  description:
+    "Ishank Singh Yadav became the youngest FIDE rated player in classical and rapid formats at just 4 years old. His dedication and talent have set a benchmark for young chess enthusiasts across India.",
+  highlight:
+    "Highlights: Youngest FIDE rated in classical and rapid at age 4. Consistent top performer in national and state tournaments.",
+  gifCaption:
+    "Biggest Achievement: FIDE rating at age 4!",
+};
 export const HERO = {
   titleOne: "Where Champions Are Made —",
   titleTwo: "Viansh Chess Academy!",
