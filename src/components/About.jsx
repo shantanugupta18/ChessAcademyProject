@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import "../styles/AboutSection.css";
 import { ABOUT } from "../constants/texts";
-// import chessboardLoadingGif from "../assets/chessboard-loading.gif";
 import chessboardLoadingGif from "../assets/chess-animation.gif";
 
 const AboutSection = () => {
