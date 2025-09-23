@@ -3,7 +3,7 @@ export const STAR_PERFORMER = {
   description:
     "Ishank Singh Yadav became the youngest FIDE rated player in classical and rapid formats at just 4 years old. His dedication and talent have set a benchmark for young chess enthusiasts across India.",
   highlight:
-    "Highlights: Youngest FIDE rated in classical and rapid at age 4. Consistent top performer in national and state tournaments.",
+    "Youngest FIDE rated in classical and rapid at age 4. Consistent top performer in national and state tournaments.",
   gifCaption:
     "Biggest Achievement: FIDE rating at age 4!",
 };
@@ -15,8 +15,8 @@ export const HERO = {
 
 export const ABOUT = {
   title: "About Us",
-  text: `Viansh Chess Academy (VCA) is dedicated to nurturing chess talent and fostering a love for the game. Our students have consistently excelled in tournaments and developed strategic thinking, discipline, and sportsmanship. One of our proudest achievements is Nitesh Yadav, who achieved a FIDE rating in just six months and is currently ranked among the top young players in India.`,
-  CTA_Button_Label: "View Nishant\'s FIDE Rating Chart"
+  text: `Viansh Chess Academy (VCA) is dedicated to nurturing chess talent and fostering a love for the game. Our students have consistently excelled in tournaments and developed strategic thinking, discipline, and sportsmanship. One of our proudest achievements is Ayansh Singh, who achieved a FIDE rating in just six months and is currently ranked among the top young players in India.`,
+  CTA_Button_Label: "View Ayansh\'s FIDE Rating Chart"
 };
 
 export const NOTICE_BOARD = {

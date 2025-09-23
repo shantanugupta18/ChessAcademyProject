@@ -14,7 +14,7 @@ const AboutSection = () => {
       <h2>About VCA</h2>
       <p>{aboutText}</p>
       <div>
-        <strong>Nitesh Yadav</strong> achieved a FIDE rating in just six months and is currently ranked among the top young players in India.
+        <strong>Ayansh Singh</strong> achieved a FIDE rating in just six months and is currently ranked among the top young players in India.
       </div>
       <button className="view-fide-chart-button" onClick={handleCtaClick}>
         {ctaLabel}

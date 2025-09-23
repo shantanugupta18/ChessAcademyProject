@@ -41,12 +41,12 @@ const StarPerformerSection = () => {
           <h2>{STAR_PERFORMER.title}</h2>
           <p>{STAR_PERFORMER.description}</p>
           <div className="star-performer-highlight">
-            <strong>{STAR_PERFORMER.highlight}</strong>
+            {STAR_PERFORMER.highlight}
           </div>
-          {/* <div className="star-performer-gif">
-            <img src={achievementGif} alt="Biggest Achievement" />
-            <div className="star-performer-gif-caption">{STAR_PERFORMER.gifCaption}</div>
-          </div> */}
+          <div className="star-performer-gif">
+            {/* <img src={achievementGif} alt="Biggest Achievement" /> */}
+            <div className="star-performer-gif-caption"><strong>{STAR_PERFORMER.gifCaption}</strong></div>
+          </div>
         </div>
       </div>
     </section>
