@@ -12,6 +12,10 @@ const ContactSection = () => (
           <strong>Address:</strong> Sec 8 B, House No 34, opp. Radha Nikunj Park, Vrindavan Colony,<br />Lucknow, Uttar Pradesh 226019
         </div>
         <div>
+          <strong>Main Branch:</strong> Lucknow, Uttar Pradesh <br />
+          <strong>Another Branch:</strong> Kanpur, Uttar Pradesh
+        </div>
+        <div>
           <strong>Email:</strong> vianshacademy@gmail.com
         </div>
         <div>

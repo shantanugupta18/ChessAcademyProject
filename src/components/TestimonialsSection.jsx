@@ -4,7 +4,7 @@ import "../styles/TestimonialsSection.css";
 const testimonials = [
   {
     name: "Priya Sen",
-    text: "My child is thriving at Aim Chess Academy! The trainers are supportive and the environment is perfect for learning.",
+    text: "My child is thriving at Viansh Chess Academy! The trainers are supportive and the environment is perfect for learning.",
     rating: 5
   }
 ];

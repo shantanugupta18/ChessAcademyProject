@@ -91,7 +91,7 @@ export const KEYFEATURES = [
 export const ACHIEVEMENTS = [
   {
     heading: "Achievements & Success Story",
-    description: "In 2024, Aim Chess Academy students won several inter-academy tournaments and received recognition for their outstanding performance. Our students consistently excel in competitions, demonstrating strategic thinking and rapid skill development."
+    description: "In 2024-25, Viansh Chess Academy students won several inter-academy tournaments and received recognition for their outstanding performance. Our students consistently excel in competitions, demonstrating strategic thinking and rapid skill development."
   },
 	{
 		img: "../src/assets/youngest-champ.jpg",
