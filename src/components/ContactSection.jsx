@@ -66,6 +66,7 @@ const ContactSection = () => (
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Viansh Chess Academy Location"
           ></iframe>
         </div>
       </div>

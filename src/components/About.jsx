@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../styles/AboutSection.css";
-import { ABOUT } from "../constants/texts";
+import { ABOUT, FIDE_RATING_URL } from "../constants/texts";
 import chessboardLoadingGif from "../assets/chess-animation.gif";
 
 const AboutSection = () => {
@@ -13,12 +13,12 @@ const AboutSection = () => {
     <section className="about-section" style={{ position: "relative" }}>
       <h2>About VCA</h2>
       <p>{aboutText}</p>
-      <div>
-        <strong>Ayansh Singh</strong> achieved a FIDE rating in just six months and is currently ranked among the top young players in India.
+      {/* <div>
+        <strong>Ishank Singh Yadav</strong> achieved a FIDE rating in just six months and is currently ranked among the top young players in India.
       </div>
       <button className="view-fide-chart-button" onClick={handleCtaClick}>
         {ctaLabel}
-      </button>
+      </button> */}
       {showFideChart && (
         <IframeWithLoader onClose={handleCtaClick} />
       )}
@@ -31,7 +31,7 @@ const AboutSection = () => {
   );
 };
 
-const IframeWithLoader = ({ onClose }) => {
+export const IframeWithLoader = ({ onClose }) => {
   const [loading, setLoading] = useState(true);
   return (
     <div style={{ margin: "2rem auto", maxWidth: "900px", position: "relative" }}>
@@ -41,7 +41,7 @@ const IframeWithLoader = ({ onClose }) => {
         </div>
       )}
       <iframe
-        src="https://ratings.fide.com/profile/531020100/chart"
+        src={FIDE_RATING_URL.ishank_fide_chart}
         title="FIDE Rating Chart"
         width="100%"
         height="500"
