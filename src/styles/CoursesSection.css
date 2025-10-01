@@ -152,13 +152,60 @@
 
 
 .course-price {
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-weight: 700;
     color: #0077ff;
     font-size: 1.12em;
     margin: 0 0 0.7em 0;
     white-space: nowrap;
     text-align: left;
-    display: block;
+}
+
+/* Old price: red, strikethrough, 2px smaller */
+.course-price .price-old {
+    color: #e11d48;
+    /* red */
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: currentColor;
+    font-size: calc(1em - 2px);
+    opacity: 0.9;
+}
+
+/* New price: prominent + gentle pulse */
+.course-price .price-new {
+    display: inline-flex;
+    align-items: baseline;
+    color: #0077ff;
+    /* or brand color */
+    font-size: calc(1em + 4px);
+    line-height: 1;
+    transform-origin: left center;
+    animation: pricePulse 1.15s ease-in-out 0.2s 3 both;
+    /* grow/shrink 3 times */
+}
+
+/* Pulse keyframes: scale up then back down */
+@keyframes pricePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+/* Optional "per class" unit */
+.course-price .price-unit {
+    color: #555;
+    font-weight: 600;
+    font-size: 0.86em;
+    margin-left: 0.1rem;
 }
 
 .course-features {
@@ -219,6 +266,11 @@
         font-size: 1em;
         margin-left: 0;
         margin-top: 0.15em;
+        gap: 0.45rem;
+    }
+
+    .course-price .price-new {
+        font-size: calc(1em + 2px);
     }
 
     .course-features {

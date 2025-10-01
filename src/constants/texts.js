@@ -55,31 +55,36 @@ export const COURSES = [
     description_parta: "Chess classes are offered in both",
     description_bold: "Offline and Online",
     description_partb: "formats, ensuring students can learn wherever they feel most comfortable. Offline coaching provides interactive, face-to-face learning and real-time feedback, while online classes offer flexible scheduling and the convenience of remote participation. Choose the approach that best fits your lifestyle and experience the same high-quality training and guidance in both classroom settings.",
-    highlight_text: "Hurry! Limited seats available. In every course only 5 students can join."
+    highlight_text: "Festival Offer! Only 5 seats per course. Hurry!"
   },
   {
     title: "Beginner Classes",
-    price: "₹2500 per month",
+    originalPrice: "₹3500 per month",
+    discountedPrice: "₹2500 per month",
     features: ["Openings & strategies", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
   },
   {
     title: "Intermediate Classes",
-    price: "₹3999 per month",
+    originalPrice: "₹5000 per month",
+    discountedPrice: "₹3999 per month",
     features: ["Tactics & Middle Games", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
   },
   {
     title: "Advanced Classes",
-    price: "₹4999 per month",
+    originalPrice: "₹6000 per month",
+    discountedPrice: "₹4999 per month",
     features: ["Endgame & Positional Play", "Both Offline and Online", "Age group: 3 - 15 years", "2 hour per class", "15 classes per month"]
   },
   {
     title: "Expert Classes",
-    price: "₹5999 per month",
+    originalPrice: "₹6000 per month",
+    discountedPrice: "₹5999 per month",
     features: ["Game Analysis & Positional Play Discussion", "Both Offline and Online", "Age group: 3 - 15 years", "2 hour per class", "15 classes per month"]
   },
   {
     title: "Individual Classes",
-    price: "₹499 per class",
+    // originalPrice: "₹499 per class",
+    discountedPrice: "₹499 per class",
     features: ["Optional Class", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "Flexible scheduling"]
   },
 ];

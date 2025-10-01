@@ -21,7 +21,20 @@ const CoursesSection = () => (
         >
           <div className="course-header">
             <h3 className="course-title">{course.title}</h3>
-            <span className="course-price">{course.price}</span>
+            {course.discountedPrice ? (
+              <div
+                className="course-price"
+                aria-label={`${course.title} price discounted from ${course.originalPrice} to ${course.discountedPrice} per class`}
+              >
+                <span className="price-old" aria-hidden="true">
+                  {course.originalPrice}
+                </span>
+                <span className="price-new">{course.discountedPrice}</span>
+                {/* <span className="price-unit">per class</span> */}
+              </div>
+            ) : (
+              <span className="course-price">{course.price}</span>
+            )}{" "}
           </div>
           <ul className="course-features">
             {course.features.map((f, i) => (
