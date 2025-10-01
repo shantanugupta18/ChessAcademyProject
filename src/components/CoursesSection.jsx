@@ -30,7 +30,6 @@ const CoursesSection = () => (
                   {course.originalPrice}
                 </span>
                 <span className="price-new">{course.discountedPrice}</span>
-                {/* <span className="price-unit">per class</span> */}
               </div>
             ) : (
               <span className="course-price">{course.price}</span>
