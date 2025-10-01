@@ -11,6 +11,7 @@ import ContactSection from "../components/ContactSection";
 import ImageCarousel from "../components/ImageCarousel";
 import Header from "../components/Header";
 import AboutSection from "../components/About";
+import StarPerformerSection from "../components/StarPerformerSection";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
           <HeroSection />
           <NoticeBoard />
           <AboutSection />
+          <StarPerformerSection />
           <FeaturesSection />
           <AchievementsSection />
           <ImageCarousel />

@@ -1,7 +1,8 @@
 // ContactSection.jsx
 import React from "react";
 import "../styles/ContactSection.css";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaSquareYoutube } from "react-icons/fa6";
 
 const ContactSection = () => (
   <section id="contact-section" className="contact-section">
@@ -38,12 +39,12 @@ const ContactSection = () => (
         </div>
         <div className="contact-social">
           <strong>Follow Us:</strong>
-          {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          {/* {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FaFacebookF />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-            <FaTwitter />
           </a> */}
+          <a href="https://www.youtube.com/@vianshchessacademy" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <FaYoutube />
+          </a> 
           <a
             href="https://www.instagram.com/viansh.chessacademy?igsh=YTRiMnh0Znl0NDM1"
             target="_blank"
@@ -66,6 +67,7 @@ const ContactSection = () => (
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Viansh Chess Academy Location"
           ></iframe>
         </div>
       </div>

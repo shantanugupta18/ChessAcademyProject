@@ -1,13 +1,28 @@
+export const STAR_PERFORMER = {
+  title: "Star Performer & Youngest FIDE Rated Player",
+  star_name: "Ishank Singh Yadav",
+  description:
+    "became the youngest FIDE rated player in classical and rapid formats at just 4 years old. His dedication and talent have set a benchmark for young chess enthusiasts across Uttar Pradesh and India, inspiring the next generation of players to dream big and achieve greatness.",
+  highlight:
+    "Youngest FIDE rated in classical and rapid at age 4. Consistent top performer in national and state tournaments.",
+  gifCaption:
+    "Biggest Achievement: FIDE rating at age 4!",
+};
 export const HERO = {
   titleOne: "Where Champions Are Made —",
   titleTwo: "Viansh Chess Academy!",
-  subtitle: "Join our academy to develop strategic thinking, analytical skills, and a love for chess. Book your free demo class today!"
+  subtitle: "Join our academy to develop strategic thinking, analytical skills, and a love for chess. Book your Individual class today!"
+};
+
+export const FIDE_RATING_URL = {
+  ishank_fide_chart: "https://ratings.fide.com/profile/547042346/statistics",
+  ayansh_fide_chart: "https://ratings.fide.com/profile/531020100/chart"
 };
 
 export const ABOUT = {
   title: "About Us",
-  text: `Viansh Chess Academy (VCA) is dedicated to nurturing chess talent and fostering a love for the game. Our students have consistently excelled in tournaments and developed strategic thinking, discipline, and sportsmanship. One of our proudest achievements is Nitesh Yadav, who achieved a FIDE rating in just six months and is currently ranked among the top young players in India.`,
-  CTA_Button_Label: "View Nishant\'s FIDE Rating Chart"
+  text: `Viansh Chess Academy (VCA) is dedicated to nurturing chess talent and fostering a love for the game. Our students have consistently excelled in tournaments and developed strategic thinking, discipline, and sportsmanship. One of our proudest achievements is Ishank Singh Yadav, who achieved a FIDE rating in just six months and is currently ranked among the top young players in India.`,
+  CTA_Button_Label: "View Ishank\'s FIDE Rating Chart"
 };
 
 export const NOTICE_BOARD = {
@@ -50,17 +65,17 @@ export const COURSES = [
   {
     title: "Intermediate Classes",
     price: "₹3999 per month",
-    features: ["Tactics & endgames", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
+    features: ["Tactics & Middle Games", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
   },
   {
     title: "Advanced Classes",
     price: "₹4999 per month",
-    features: ["Tactics & endgames", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
+    features: ["Endgame & Positional Play", "Both Offline and Online", "Age group: 3 - 15 years", "2 hour per class", "15 classes per month"]
   },
   {
     title: "Expert Classes",
     price: "₹5999 per month",
-    features: ["Tactics & endgames", "Both Offline and Online", "Age group: 3 - 15 years", "1 hour per class", "15 classes per month"]
+    features: ["Game Analysis & Positional Play Discussion", "Both Offline and Online", "Age group: 3 - 15 years", "2 hour per class", "15 classes per month"]
   },
   {
     title: "Individual Classes",
@@ -75,7 +90,7 @@ export const KEYFEATURES = [
     desc: "Have your child compete in monthly tournaments."
   },
   {
-    title: "ISO Certification",
+    title: "E-Certification",
     desc: "Receive certificate upon course completion."
   },
   {
@@ -91,7 +106,7 @@ export const KEYFEATURES = [
 export const ACHIEVEMENTS = [
   {
     heading: "Achievements & Success Story",
-    description: "In 2024-25, Viansh Chess Academy students won several inter-academy tournaments and received recognition for their outstanding performance. Our students consistently excel in competitions, demonstrating strategic thinking and rapid skill development."
+    description: "In 2025, Viansh Chess Academy students won several inter-academy tournaments and received recognition for their outstanding performance. Our students consistently excel in competitions, demonstrating strategic thinking and rapid skill development."
   },
 	{
 		img: "../src/assets/youngest-champ.jpg",
@@ -119,7 +134,7 @@ export const FAQS = [
   },
   {
     question: "How can I schedule a demo session?",
-    answer: "Fill out the demo form above and we will contact you."
+    answer: "The coach will assign each student to the most suitable batch after conducting an individual introductory class. This process ensures that every learner receives personalized guidance appropriate for their skill level and growth in chess."
   },
   {
     question: "What are the timings for each course?",
